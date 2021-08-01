@@ -1,0 +1,65 @@
+body{
+  font-family:Times New Roman ;
+  background-image: url('halaman/image/pst.png');
+  background-repeat: no-repeat;
+  background-size: 1138px 740px;
+}
+p{
+  color: #fff;
+  font-family: times now roman;
+  font-size: 20px;
+  text-align:left;
+}
+.tulisan_login{
+  margin: 0;
+  padding: 0 0 5px;
+  text-align: center;
+  font-size: 25px;
+  font-family: times new roman;
+  font-weight: bold;
+  color: #fff;
+}
+.kotak_login{
+  width: 320px;
+  height: 500px;
+  background:rgba(0,0,0,.5);
+  top: 45%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  padding: 50px 20px;
+  border-radius: 10px;
+}
+.loginbox input[type="text"],input[type="password"],input[type="submit"]{
+  width: 100%;
+  margin-bottom:30px;
+  font-family: times new roman;
+  color: #008000;
+}
+.loginbox input[type="text"],input[type="password"]{
+  border:none;
+  border-bottom: 1px solid #000;
+  background: transparent;
+  outline: none;
+  color: #fff;
+  font-size: 20px;
+  height:40px;
+  font-family: times new roman;
+} 
+.loginbox input[type="submit"]{
+  border: #008000 2px solid ;
+  width: 277px;
+  height: 40px;
+  font-size: 18px; 
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: times new roman;
+}
+.loginbox input[type="submit"]:hover{
+  border:none;
+  cursor: pointer;
+  background: rgb(0,128,0);
+  color: black;
+  border: #000 2px solid ;
+}
