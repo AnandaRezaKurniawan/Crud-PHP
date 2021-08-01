@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		<style>
+
+h1
+{
+  font-family: times now roman;
+  font-weight: bold;
+}
+table tr td 
+{
+  padding: 5px;
+  line-height: 30px;
+  text-align: left;
+  font-family: times now roman;
+}
+table tr th 
+{
+  margin:10px 5px;
+  padding:1px 10px;
+  line-height: 35px;
+  text-align: center;
+  font-family: times now roman;
+  background-color: blue; 
+  color: white;
+}
+.tambah{
+  text-align: left;
+  font-family: times now roman;
+  height: 25px;
+  margin-left: 35px;
+}
+.tambah a
+{
+  color: white;
+  text-decoration: none;
+  background-color: blue; 
+  padding: 8px 20px;
+  font-size: 0.9em;
+  border: #000000 2px solid; 
+  border-radius: 5px;
+  font-weight: bold
+
+}
+.tambah a:hover{
+  cursor: pointer;
+  background:black;
+  color:white;
+}
+.pdf{
+  text-align: right;
+  height: 30px;
+  font-family: times now roman;
+  margin-right: 33px;
+}
+.pdf a{
+  color:white;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: blue; 
+  padding: 8px 20px;
+  font-size: 0.9em;
+  border: #000000 2px solid; 
+  border-radius: 5px;
+}
+.pdf a:hover{
+  cursor: pointer;
+  background:black; 
+  color:white;
+}
+.action
+{
+  text-align: center;
+}
+.gambar
+{
+  text-align: center;
+}
+input[type=submit]
+{
+  border:none;
+  outline: none;
+  height: 40px;
+  background:rgb(77,201,242); 
+  color: white;
+  font-size: 18px; 
+  border-radius: 5px;
+  font-weight: bold;
+  float: left;
+  border:1px solid black;
+}
+input[type="submit"]:hover
+{
+  border:1px solid black;
+  cursor: pointer;
+  background:white;
+  color:rgb(77,201,242); 
+  width: 50px;
+}
+.edit
+{
+  background-color: #0000ff;
+  border: none;
+  color: white;
+  padding: 100px 90px;
+  font-family: Times New Roman;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 100px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.crud input[type="text"],input[type="password"],input[type="date"],input[type="file"]
+{
+  border:2px solid rgba(0,0,0,.5);
+  border-radius:5px;
+  padding: 5px;
+  font-size: 20px;
+  line-height: 20px;
+  width: 150%;
+  text-align:left;
+}
+textarea[type="text"]
+{
+  border:2px solid rgba(0,0,0,.5);
+  border-radius:5px;
+  padding: 5px;
+  width: 150%;
+}
+.crud td
+{
+  font-family:times now roman;
+  font-size: 20px;
+}
+.crud input[type="submit"]
+{
+  height: 40px;
+  background-color: white; 
+  color: black;
+  font-size: 18px; 
+  border-radius: 5px;
+  font-weight: bold;
+  border:1px solid black;
+  text-decoration: none;
+  border: #000000 2px solid; 
+}
+.crud input[type="submit"]:hover{
+  cursor: pointer;
+  background:black;
+  color: white;
+}
+.crud input[type="reset"]{
+  border: #000000 2px solid;
+  outline: none;
+  height: 40px;
+  background-color: white; 
+  color: black;
+  margin-right: 140px;
+  font-size: 18px; 
+  border-radius: 5px;
+  font-weight: bold;
+  float: right;
+  text-decoration: none;
+
+}
+.crud input[type="reset"]:hover{
+  border:2px solid black;
+  cursor: pointer;
+  background:black;
+  color: white;
+  width: 50px;
+}   
+.lihat_data{
+  text-align: center;
+  height: 50px;
+  margin-top: 2em;
+ float: left;
+}
+.lihat_data a{
+  color: black;
+  font-family: times now roman;
+  text-decoration: none;
+  background-color: white; 
+  padding: 8px 20px;
+  font-size: 18px;
+  border: 2px solid black; 
+  border-radius: 5px;
+  font-weight: bold
+}
+.lihat_data a:hover{
+  border:2px solid black;
+  cursor: pointer;
+  background:black;
+  color: white;
+  width: 50px;
+}   
+</style>
+	</style>
+	<title>Aplikasi Tiket</title>
+</head>
+<body>
+	<div class="crud">
+	<center>
+	<h1>Register</h1>
+		<form action="prosesreg.php" method="POST">
+			<table>
+				<tr>
+					<td>No</td>
+					<td>:</td>
+					<td><input type="text" name="no" required></td>
+				</tr>
+				<tr>
+					<td>Id_user</td>
+					<td>:</td>
+					<td><input type="text" name="id_user" required></td>
+				</tr>
+				<tr>
+					<td>Username</td>
+					<td>:</td>
+					<td><input type="text" name="username" required></td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td>:</td>
+					<td><input type="password" name="password" required></td>
+				</tr>
+				<tr>
+					<td>Konfirmasi Password</td>
+					<td>:</td>
+					<td><input type="password" name="password2" required></td>
+				</tr>
+				<tr>
+					<td>Nama_user</td>
+					<td>:</td>
+					<td><input type="text" name="nama_user" required></td>
+				</tr>
+				<tr hidden>
+					<td>Hak Akses</td>
+					<td>:</td>
+					<td><select name="level" style="width: 100%;" required="">
+					<option>Penumpang</option></select></td>
+				</tr>
+				<tr>
+					<td colspan="3" class="aksi">
+						<button type="submit" name="submit">Submit</button>
+						<button type="reset" name="reset">Batal</button>
+						<a href="index.php">Kembali</a>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</center>
+</div>
+</body>
+</html>
