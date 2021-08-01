@@ -1,0 +1,28 @@
+.menu{
+	border:1px solid black;
+	border-radius: 8px;
+	margin-bottom: 10px;
+	background:blue;
+}
+div.menu ul {
+	list-style:none;
+	overflow: hidden;
+}
+div.menu ul li {
+	float:left;		
+	text-transform:uppercase;
+}
+div.menu ul li a {
+	display:block;	
+	padding:0 20px;
+	text-decoration:none;
+	color:white;
+	font-family: times now roman;
+	font-size:13px;
+	font-weight:400;
+	transition:all 0.3s ease-in-out;
+}
+div.menu ul li a:hover{
+	color: black;
+	background-color: white;
+}
